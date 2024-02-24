@@ -6,7 +6,7 @@ void boilerplate_scene_scene_4_on_enter(void* context) {
     DialogsFileBrowserOptions browser_options;
     
     // This will filter the browser to only show one file type and also add an icon
-    dialog_file_browser_set_basic_options(&browser_options, SUBGHZ_APP_EXTENSION, &I_sub1_10px);
+    dialog_file_browser_set_basic_options(&browser_options, SUBGHZ_APP_EXTENSION, &I_subgicon_10x10);
     
     //Get the Folder you want to browse
     browser_options.base_path = SUBGHZ_APP_FOLDER;
@@ -26,7 +26,7 @@ void boilerplate_scene_scene_4_on_enter(void* context) {
         //scene_manager_next_scene(app->scene_manager, BoilerplateViewIdMenu);
         scene_manager_previous_scene(app->scene_manager); // temp for showcase
     } else {
-        // This is basically if someone quites the browser
+        // This is basically if someone quits the browser
         scene_manager_previous_scene(app->scene_manager);
     }
 }
