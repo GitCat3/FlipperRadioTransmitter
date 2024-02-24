@@ -6,7 +6,7 @@ void boilerplate_scene_scene_4_on_enter(void* context) {
     DialogsFileBrowserOptions browser_options;
     
     // This will filter the browser to only show one file type and also add an icon
-    // dialog_file_browser_set_basic_options(&browser_options, SUBGHZ_APP_EXTENSION, &I_sub1_10px);
+    dialog_file_browser_set_basic_options(&browser_options, SUBGHZ_APP_EXTENSION, &I_sub1_10px);
     
     //Get the Folder you want to browse
     browser_options.base_path = SUBGHZ_APP_FOLDER;
