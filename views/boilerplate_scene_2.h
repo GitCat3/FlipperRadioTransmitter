@@ -8,9 +8,9 @@ typedef struct BoilerplateScene2 BoilerplateScene2;
 typedef void (*BoilerplateScene2Callback)(BoilerplateCustomEvent event, void* context);
 
 void boilerplate_scene_2_set_callback(
-    BoilerplateScene2* instance,
-    BoilerplateScene2Callback callback,
-    void * context);
+	BoilerplateScene2* instance,
+	BoilerplateScene2Callback callback,
+	void * context);
 
 BoilerplateScene2* boilerplate_scene_2_alloc();
 

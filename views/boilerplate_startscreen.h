@@ -8,9 +8,9 @@ typedef struct BoilerplateStartscreen BoilerplateStartscreen;
 typedef void (*BoilerplateStartscreenCallback)(BoilerplateCustomEvent event, void* context);
 
 void boilerplate_startscreen_set_callback(
-    BoilerplateStartscreen* boilerplate_startscreen,
-    BoilerplateStartscreenCallback callback,
-    void* context);
+	BoilerplateStartscreen* boilerplate_startscreen,
+	BoilerplateStartscreenCallback callback,
+	void* context);
 
 View* boilerplate_startscreen_get_view(BoilerplateStartscreen* boilerplate_static);
 

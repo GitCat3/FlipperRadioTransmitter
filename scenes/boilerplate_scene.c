@@ -23,8 +23,8 @@ void (*const boilerplate_on_exit_handlers[])(void* context) = {
 
 // Initialize scene handlers configuration structure
 const SceneManagerHandlers boilerplate_scene_handlers = {
-    .on_enter_handlers = boilerplate_on_enter_handlers,
-    .on_event_handlers = boilerplate_on_event_handlers,
-    .on_exit_handlers = boilerplate_on_exit_handlers,
-    .scene_num = BoilerplateSceneNum,
+	.on_enter_handlers = boilerplate_on_enter_handlers,
+	.on_event_handlers = boilerplate_on_event_handlers,
+	.on_exit_handlers = boilerplate_on_exit_handlers,
+	.scene_num = BoilerplateSceneNum,
 };

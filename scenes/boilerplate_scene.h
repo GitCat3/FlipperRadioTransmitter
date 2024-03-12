@@ -6,7 +6,7 @@
 #define ADD_SCENE(prefix, name, id) BoilerplateScene##id,
 typedef enum {
 #include "boilerplate_scene_config.h"
-    BoilerplateSceneNum,
+	BoilerplateSceneNum,
 } BoilerplateScene;
 #undef ADD_SCENE
 
@@ -19,7 +19,7 @@ extern const SceneManagerHandlers boilerplate_scene_handlers;
 
 // Generate scene on_event handlers declaration
 #define ADD_SCENE(prefix, name, id) \
-    bool prefix##_scene_##name##_on_event(void* context, SceneManagerEvent event);
+	bool prefix##_scene_##name##_on_event(void* context, SceneManagerEvent event);
 #include "boilerplate_scene_config.h"
 #undef ADD_SCENE
 

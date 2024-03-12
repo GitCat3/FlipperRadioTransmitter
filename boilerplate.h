@@ -26,51 +26,51 @@
 #define SUBGHZ_APP_FOLDER ANY_PATH("subghz")
 
 typedef struct {
-    Gui* gui;
-    NotificationApp* notification;
-    ViewDispatcher* view_dispatcher;
-    Submenu* submenu;
-    SceneManager* scene_manager;
-    VariableItemList* variable_item_list;
-    BoilerplateStartscreen* boilerplate_startscreen;
-    BoilerplateScene1* boilerplate_scene_1;
-    BoilerplateScene2* boilerplate_scene_2;
-    DialogsApp* dialogs; // File Browser
-    FuriString* file_path; // File Browser
-    uint32_t haptic; 
-    uint32_t speaker;
-    uint32_t led;
-    uint32_t save_settings;
-    ButtonMenu* button_menu; // Button Menu
+	Gui* gui;
+	NotificationApp* notification;
+	ViewDispatcher* view_dispatcher;
+	Submenu* submenu;
+	SceneManager* scene_manager;
+	VariableItemList* variable_item_list;
+	BoilerplateStartscreen* boilerplate_startscreen;
+	BoilerplateScene1* boilerplate_scene_1;
+	BoilerplateScene2* boilerplate_scene_2;
+	DialogsApp* dialogs; // File Browser
+	FuriString* file_path; // File Browser
+	uint32_t haptic; 
+	uint32_t speaker;
+	uint32_t led;
+	uint32_t save_settings;
+	ButtonMenu* button_menu; // Button Menu
 } Boilerplate;
 
 typedef enum {
-    BoilerplateViewIdStartscreen,
-    BoilerplateViewIdMenu,
-    BoilerplateViewIdScene1,
-    BoilerplateViewIdScene2,
-    BoilerplateViewIdScene3,
-    BoilerplateViewIdScene4,
-    BoilerplateViewIdScene5,
-    BoilerplateViewIdSettings,
+	BoilerplateViewIdStartscreen,
+	BoilerplateViewIdMenu,
+	BoilerplateViewIdScene1,
+	BoilerplateViewIdScene2,
+	BoilerplateViewIdScene3,
+	BoilerplateViewIdScene4,
+	BoilerplateViewIdScene5,
+	BoilerplateViewIdSettings,
 } BoilerplateViewId;
 
 typedef enum {
-    BoilerplateHapticOff,
-    BoilerplateHapticOn,
+	BoilerplateHapticOff,
+	BoilerplateHapticOn,
 } BoilerplateHapticState;
 
 typedef enum {
-    BoilerplateSpeakerOff,
-    BoilerplateSpeakerOn,
+	BoilerplateSpeakerOff,
+	BoilerplateSpeakerOn,
 } BoilerplateSpeakerState;
 
 typedef enum {
-    BoilerplateLedOff,
-    BoilerplateLedOn,
+	BoilerplateLedOff,
+	BoilerplateLedOn,
 } BoilerplateLedState;
 
 typedef enum {
-    BoilerplateSettingsOff,
-    BoilerplateSettingsOn,
+	BoilerplateSettingsOff,
+	BoilerplateSettingsOn,
 } BoilerplateSettingsStoreState;
